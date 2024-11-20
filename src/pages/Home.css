@@ -1,0 +1,78 @@
+.board-container {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.board-container h1 {
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid white;
+    text-shadow: 1px 1px 5px #00eaff;
+    color: #121e1e;
+    margin-top: 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.board button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    background: none;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.board button::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+p.reset {
+    text-align: center;
+    margin-top: 10px;
+    text-align: center;
+    background: #e46060;
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px black;
+}
+
+p.reset button, .history button {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-size: 25px;
+    color: #121e1e;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 1px 1px 5px #ff0202;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.history {
+    text-align: center;
+    margin: 10px;
+}
+
+.winner {
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    text-shadow: 2px 2px 10px rgb(0, 135, 0);
+    color: #ce460d;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 15px;
+}
